@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Joyas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f6; /* Fondo rosado muy claro */
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #ff66b2; /* Rosado fuerte */
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      flex: 1;
+      gap: 15px;
+    }
+    .producto {
+      background: white;
+      border: 1px solid #ffd6e8; /* borde rosado suave */
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(255,102,178,0.2);
+      transition: transform 0.2s;
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      border-bottom: 1px solid #ffd6e8;
+      border-radius: 10px 10px 0 0;
+    }
+    .producto h2 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #ff3399; /* Rosado para títulos */
+    }
+    .producto p {
+      color: #555;
+      margin: 5px 0;
+    }
+    .precio {
+      color: #ff3399; /* Rosado fuerte para el precio */
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .boton {
+      display: inline-block;
+      background-color: #ff66b2; /* Botón rosado */
+      color: white;
+      padding: 10px 20px;
+      margin: 10px 0 15px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .boton:hover {
+      background-color: #ff3385; /* Rosado más intenso al pasar el mouse */
+    }
+    footer {
+      background-color: #ff66b2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .producto {
+        flex: 1 1 45%;
+        max-width: 45%;
+      }
+      .producto img {
+        max-height: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+      .producto {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      .producto img {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ ACCESORIES 🩷 A&M✨</h1>
+    <p>La mejor colección de anillos, collares y pulseras</p>
+  </header>
+
+  <div class="contenedor">
+    <div class="producto">
+      <img src="IMAGEN2.jpg" alt="Anillo de oro">
+      <h2>ARITO DE CORAZON</h2>
+      <p>Elegante ARITO</p>
+      <p class="precio">50 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20ARITO%20DE%20CORAZON%20de%2050%20Bs" class="boton" target="_blank">Comprar</a>
+      
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN3.jpg" alt="Collar de plata">
+      <h2>ARITO DE ORO</h2>
+      <p>ELEGANTE ARITO DE ORO</p>
+      <p class="precio">60 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20ARITO%20DE%20ORO%20de%2060%20Bs" class="boton" target="_blank">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN4.jpg" alt="Collar de plata">
+      <h2>ARITO DE ORO</h2>
+      <p>ELEGANTE ARITO DE ORO</p>
+      <p class="precio">55 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2055%20Bs" class="boton" target="_blank">Comprar</a>      
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN5.jpg" alt="Collar de plata">
+      <h2>COLLAR DE ORO</h2>
+      <p>ELEGANTE COLLAR DE ORO</p>
+      <p class="precio">70 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2070%20Bs" class="boton" target="_blank">Comprar</a>    </div>
+
+    <div class="producto">
+      <img src="IMAGEN6.jpg" alt="Collar de plata">
+      <h2>COLLAR DE ORO</h2>
+      <p>ELEGANTE COLLAR DE ORO</p>
+      <p class="precio">45 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2045%20Bs" class="boton" target="_blank">Comprar</a>      
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN7.jpg" alt="Collar de plata">
+      <h2>COLLAR DE ORO</h2>
+      <p>ELEGANTE COLLAR DE ORO</p>
+      <p class="precio">65 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2065%20Bs" class="boton" target="_blank">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN8.jpg" alt="Collar de plata">
+      <h2>COLLAR DE ORO</h2>
+      <p>ELEGANTE COLLAR DE ORO</p>
+      <p class="precio">68 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2068%20Bs" class="boton" target="_blank">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="IMAGEN9.jpg" alt="Collar de plata">
+      <h2>COLLAR DE ORO</h2>
+      <p>ELEGANTE COLLAR DE ORO</p>
+      <p class="precio">69.99 Bs</p>
+      <a href="https://wa.me/59176375646?text=Hola%20quiero%20comprar%20el%20COLLAR%20DE%20ORO%20de%2069.99%20Bs" class="boton" target="_blank">Comprar</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Joyas Elegantes | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
